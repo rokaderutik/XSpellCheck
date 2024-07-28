@@ -19,7 +19,7 @@ export default function SpellCheck() {
         });
         
         if(correctedFirst) {
-            setCorrection(customDictionary[correctedFirst]);
+            setCorrection(customDictionary[correctedFirst.toLocaleLowerCase()]);
         } else {
             setCorrection("");
         }
